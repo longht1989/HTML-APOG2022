@@ -1,0 +1,57 @@
+.wrapper {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 16px;
+    @include clearfix;
+}
+
+.container {
+    @include respond-above(sm) {
+        max-width: 540px;
+    }
+
+    @include respond-above(md) {
+        max-width: 720px;
+    }
+
+    @include respond-above(lg) {
+        max-width: 960px;
+    }
+
+    @include respond-above(lge) {
+        max-width: 1080px;
+    }
+
+    @include respond-above(xl) {
+        max-width: 1140px;
+    }
+
+    @include respond-above(xxl) {
+        max-width: 1320px;
+    }
+
+    &-xxl {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include respond-above(xxl) {
+            max-width: 1320px;
+        }
+    }
+}
+
+.area#about {
+    .text {
+        @include respond-above(md) {
+            margin-inline: auto;
+            max-width: 90%;
+        }
+
+        @include respond-above(xl) {
+            max-width: 75%;
+        }
+    }
+}

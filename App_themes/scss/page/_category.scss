@@ -1,0 +1,36 @@
+.page-category {
+    .site-content {
+        margin-top: 2rem;
+    }
+
+    .zone--timeline {
+        .story {
+            &__thumb {
+                float: none;
+                width: 100%;
+                margin-bottom: 0.625rem;
+            }
+
+            &__thumb {
+                @include respond-above(sm) {
+                    margin-bottom: 0;
+                    float: left;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.table-tool {
+    margin-bottom: 1rem;
+    .search-wrap {
+        position: relative;
+
+        .btn-search {
+            position: absolute;
+            right: 8px;
+            bottom: 5px;
+        }
+    }
+}

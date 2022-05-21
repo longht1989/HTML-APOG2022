@@ -1,0 +1,151 @@
+// Header style
+.site-header {
+    z-index: 20;
+
+    .wrapper {}
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+        transition: all 0.2s ease-out;
+    }
+
+    .nav {
+        margin-left: auto;
+        display: none;
+
+        &-item {
+            font-weight: bold;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray-200;
+            }
+
+            @include respond-above(md) {}
+
+            @include respond-above(lg) {
+                font-size: 14px;
+                display: block;
+
+                &:not(:last-child) {
+                    border-bottom: none;
+                }
+            }
+
+            @include respond-above(xl) {
+                font-size: 16px;
+                display: block;
+            }
+        }
+
+        &-link {
+            color: $gray-600;
+
+            &:hover {
+                color: black;
+            }
+
+            @include respond-above(md) {
+                // padding: 0 6px;
+            }
+
+            @include respond-above(lg) {
+                padding: 0 8px;
+            }
+
+            @include respond-above(xl) {
+                padding: 0 10px;
+            }
+        }
+
+        @include respond-above(lg) {
+            display: flex;
+        }
+
+        &.is-active {
+            display: block;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
+            margin: 0;
+            z-index: 20;
+            background-color: #F3F3E8;
+            border-bottom-color: $gray-200;
+        }
+    }
+
+    .logo {
+        margin: 0;
+
+        .img-fluid {
+            max-height: 32px;
+            transition: all 0.3s ease-out;
+        }
+
+        .vcci {
+            display: none;
+        }
+
+        @include respond-above(md) {
+            .vcci {
+                display: inline-block;
+            }
+
+            .img-fluid {
+                max-height: 40px;
+            }
+        }
+
+        @include respond-above(xl) {
+            .img-fluid {
+                max-height: 64px;
+            }
+        }
+    }
+
+    .m-btn {
+        #buttonMenuClose {
+            display: none;
+        }
+
+        &.is-active {
+            #buttonMenuMobile {
+                display: none;
+            }
+
+            #buttonMenuClose {
+                display: inline-block;
+            }
+        }
+
+        @include respond-above(lg) {
+            display: none;
+        }
+    }
+
+    &.is-pinned {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+
+        &+.site-content {
+            margin-top: 72px;
+        }
+
+        @include respond-above(md) {
+            .site-header__content {
+                padding: 8px 0;
+            }
+
+            .img-fluid {
+                max-height: 32px;
+            }
+        }
+    }
+}
