@@ -65,13 +65,13 @@
                 <div class="row md-3">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="FullName">Họ tên</label>
+                            <label for="FullName">Họ tên<strong class="text-danger ml-1">*</strong></label>
                             <input type="email" class="form-control" id="FullName" aria-describedby="emailHelp">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Country">Quốc tịch</label>
+                            <label for="Country">Quốc tịch<strong class="text-danger ml-1">*</strong></label>
                             <input type="password" class="form-control" id="Country">
                         </div>
                     </div>
@@ -79,13 +79,13 @@
                 <div class="row md-3">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Sex">Giới tính</label>
+                            <label for="Sex">Giới tính<strong class="text-danger ml-1">*</strong></label>
                             <input type="email" class="form-control" id="Sex" aria-describedby="emailHelp">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Address">Địa chỉ</label>
+                            <label for="Address">Địa chỉ<strong class="text-danger ml-1">*</strong></label>
                             <input type="password" class="form-control" id="Address">
                         </div>
                     </div>
@@ -93,13 +93,13 @@
                 <div class="row md-3">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Age">Năm sinh </label>
+                            <label for="Age">Năm sinh <strong class="text-danger ml-1">*</strong></label>
                             <input type="password" class="form-control" id="Age">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Work">Nơi làm việc</label>
+                            <label for="Work">Nơi làm việc<strong class="text-danger ml-1">*</strong></label>
                             <input type="email" class="form-control" id="Work" aria-describedby="emailHelp">
                         </div>
                     </div>
@@ -107,14 +107,14 @@
                 <div class="row md-3">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Education">Học hàm, học vị</label>
-                            <input type="password" class="form-control" id="Education">
+                            <label for="Education">Học hàm, học vị<strong class="text-danger ml-1">*</strong></label>
+                            <input type="password" class="form-control is-valid" id="Education">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Email">Email</label>
-                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                            <label for="Email">Email<strong class="text-danger ml-1">*</strong></label>
+                            <input type="email" class="form-control is-invalid" id="Email" aria-describedby="emailHelp">
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                             <label for="exampleInputPassword1">Nhận Chứng chỉ CME</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="">
                             <label class="form-check-label" for="inlineRadio1">Có</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -134,13 +134,12 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Phone">Số điện thoại</label>
+                            <label for="Phone">Số điện thoại<strong class="text-danger ml-1">*</strong></label>
                             <input type="email" class="form-control" id="Phone" aria-describedby="emailHelp">
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal">THANH TOÁN TRỰC TUYẾN</button>
-                <button type="submit" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#exampleModal">CHUYỂN KHOẢN</button>
+                <div class="text-right"><button type="submit" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal">Gửi & Thanh toán</button></div>
             </section>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -153,13 +152,13 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p class="font-weight-bold mb-0">
+                            <p class="mb-0">
                                 Đại biểu đã đăng ký thành công!
                             </p>
-                            <p class="font-weight-bold mb-0">
+                            <p class="mb-0">
                                 Chúng tôi sẽ gửi thông tin phản hồi trong vòng 48 giờ.
                             </p>
-                            <p class="font-weight-bold mb-0">
+                            <p class="mb-0">
                                 Xin cảm ơn!
                             </p>
                         </div>
