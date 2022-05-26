@@ -72,7 +72,7 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Country">Quốc tịch<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Country">
+                            <input type="txt" class="form-control" id="Country">
                         </div>
                     </div>
                 </div>
@@ -86,15 +86,15 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Address">Địa chỉ<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Address">
+                            <input type="txt" class="form-control" id="Address">
                         </div>
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="Age">Năm sinh <strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Age">
+                            <label for="Age">Năm sinh (Ngày/Tháng/Năm)<strong class="text-danger ml-1">*</strong></label>
+                            <input type="txt" class="form-control" id="Age">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -108,20 +108,22 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Education">Học hàm, học vị<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control is-valid" id="Education">
+                            <input type="txt" class="form-control is-valid" id="Education">
+                            <div id="validationServer03Feedback" class="valid-feedback">Thông tin chính xác</div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Email">Email<strong class="text-danger ml-1">*</strong></label>
                             <input type="email" class="form-control is-invalid" id="Email" aria-describedby="emailHelp">
+                            <div id="validationServer03Feedback" class="invalid-feedback">Thông tin chưa chính xác</div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col-12 col-md-6">
                         <div class="form-group mb-0">
-                            <label for="exampleInputPassword1">Nhận Chứng chỉ CME</label>
+                            <label for="exampleInputtxt1">Nhận Chứng chỉ CME</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="">
@@ -156,12 +158,20 @@
                 </div>
                 <div class="p-3 my-4 border border-light rounded hidden" id="VAInfo" style="display:none;">
                     <h5 class="text-center mb-3"><strong>Thông tin tài khoản nhận tiền</strong></h5>
+                    <div class="text-center">
+                        <p class="mb-1">Mã đăng ký của bạn là</p>
+                        <h3 class="d-inline-block p-2 bg-light text-danger">APOG_11</h3>
+                    </div>
+                    <br>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-hover" id="VAContent">
                             <tbody>
                                 <tr>
                                     <th scope="row" width="450">Số tiền cần thanh toán</th>
-                                    <td width="450">150000</td>
+                                    <td width="450">150000
+                                        <br>
+                                        <p class="mb-0">Cú pháp chuyển khoản <b>&#60;Mã đăng ký&#62;</b></p>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Số tài khoản</th>
@@ -179,6 +189,10 @@
                                     <th scope="row" width="450">Số Swiftcode</th>
                                     <td width="450">ASCBVNVX</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row" width="450"></th>
+                                    <td width="450"></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -186,7 +200,7 @@
             </section>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
@@ -198,6 +212,44 @@
                             <p class="mb-3"> Cám ơn bạn đã đăng ký Hội nghị APOG 2022. </p>
                             <p class="mb-3">Ban Tổ chức sẽ gửi email xác nhận kèm theo mã tham dự trong vòng 48h sau khi đăng ký và thanh toán thành công.</p>
                             <p class="mb-0">Trân trọng./.</p>
+                            <div class="text-center">
+                                <p class="mb-1">Mã đăng ký của bạn là</p>
+                                <h3 class="d-inline-block p-2 bg-light text-danger">APOG_11</h3>
+                            </div>
+                            <br>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="VAContent">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" width="450">Số tiền cần thanh toán</th>
+                                            <td width="450">150000
+                                                <br>
+                                                <p class="mb-0">Cú pháp chuyển khoản <b>&#60;Mã đăng ký&#62;</b></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" width="450">Số tài khoản</th>
+                                            <td width="450">355618</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" width="450">Tại ngân hàng</th>
+                                            <td width="450">NGÂN HÀNG TMCP Á CHÂU - PGD ĐA KAO</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" width="450">Tên chủ tài khoản</th>
+                                            <td width="450">LIÊN CHI HỘI TAI MŨI HỌNG NHI TPHCM</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" width="450">Số Swiftcode</th>
+                                            <td width="450">ASCBVNVX</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" width="450"></th>
+                                            <td width="450"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
