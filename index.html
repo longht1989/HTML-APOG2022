@@ -62,75 +62,75 @@
     <main class="site-content">
         <div class="container-xxl">
             <section class="py-5">
-                <div class="row align-items-center mb-3">
+                <div class="row align-items-center mb-3" data-course="course0">
                     <div class="col-12 col-lg-7">
                         <p class="font-weight-bold mb-0">KHÓA HỌC PHẪU THUẬT ĐƯỜNG THỞ NÂNG CAO</p>
                         <p class="text-muted mb-0">(05/8/2022, 08:00-17:00)</p>
                     </div>
                     <div class="col-12 col-md-7 col-lg-3">
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-success active">
-                                <input type="radio" name="options1" id="option1a" checked> Trực tiếp
+                            <label class="btn btn-success">
+                                <input type="radio" name="options1" id="option1a" data-price="2000000"> Trực tiếp
                             </label>
                             <label class="btn btn-light">
-                                <input type="radio" name="options1" id="option1b"> Bỏ qua
+                                <input type="radio" name="options1" data-price="0" id="option1b"> Bỏ qua
                             </label>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-2">
                         <div class="text-center">
-                            <div class="inline-block border border-light p-3">2.000.000VND</div>
+                            <div class="inline-block border border-light p-3"><span id="priceCourse0" class="price mr-1" data-value="">0</span>VND</div>
                         </div>
                     </div>
                 </div>
-                <div class="row row align-items-center mb-3">
+                <div class="row row align-items-center mb-3" data-course="course1">
                     <div class="col-12 col-lg-7">
                         <p class="font-weight-bold mb-0">HỘI THẢO ÂM NGỮ TRỊ LIỆU, KSNK & ĐIỀU DƯỠNG TRONG TMH NHI</p>
                         <p class="text-muted">(05/8/2022, 13:30-15:35)</p>
                     </div>
                     <div class="col-12 col-md-7 col-lg-3">
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-success ">
-                                <input type="radio" name="options2" id="option2a"> Trực tiếp
+                            <label class="btn btn-success">
+                                <input type="radio" name="options2" data-price="2000000" id="option2a"> Trực tiếp
                             </label>
-                            <label class="btn btn-light active">
-                                <input type="radio" name="options2" id="option2b" checked> Bỏ qua
+                            <label class="btn btn-light">
+                                <input type="radio" name="options2" data-price="0" id="option2b"> Bỏ qua
                             </label>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-2">
                         <div class="text-center">
-                            <div class="inline-block border border-light p-3">...</div>
+                            <div class="inline-block border border-light p-3"><span id="priceCourse1" class="price mr-2" data-value="">0</span>VND</div>
                         </div>
                     </div>
                 </div>
-                <div class="row row align-items-center mb-3">
+                <div class="row row align-items-center mb-3" data-course="course2">
                     <div class="col-12 col-lg-7">
                         <p class="font-weight-bold mb-0">HỘI NGHỊ TMH NHI CHÂU Á THÁI BÌNH DƯƠNG APOG 2022 </p>
                         <p class="text-muted">(06/8/2022, 07:30-17:00)</p>
                     </div>
                     <div class="col-12 col-md-7 col-lg-3">
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-success ">
-                                <input type="radio" name="options3" id="option3a"> Trực tiếp
+                            <label class="btn btn-success">
+                                <input type="radio" name="options3" data-price="2500000" id="option3a"> Trực tiếp
                             </label> <label class="btn btn-light ">
-                                <input type="radio" name="options3" id="option3b"> Trực tuyến
+                                <input type="radio" name="options3" data-price="500000" id="option3b"> Trực tuyến
                             </label>
-                            <label class="btn btn-light active">
-                                <input type="radio" name="options3" id="option3c" checked> Bỏ qua
+                            <label class="btn btn-light">
+                                <input type="radio" name="options3" data-price="0" id="option3c"> Bỏ qua
                             </label>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-2">
                         <div class="text-center">
-                            <div class="inline-block border border-light p-3">...</div>
+                            <div class="inline-block border border-light p-3"><span id="priceCourse2" class="price mr-2" data-value="">0</span>VND</div>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-end mb-3">
                     <div class="col-12 col-md-5 col-lg-2">
                         <div class="text-center">
-                            <div class="inline-block border border-primary text-primary font-weight-bold p-3">Tổng: 2.000.000VND</div>
+                            <div class="inline-block border border-primary text-primary font-weight-bold p-3">Tổng: <span class="price-total mr-2">0</span>VND</div>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <div class="modal-body">
                             <p class="font-weight-bold mb-0">HỘI NGHỊ TMH NHI CHÂU Á THÁI BÌNH DƯƠNG APOG 2022 </p>
                             <p class="text-muted">(06/8/2022, 07:30-17:00)</p>
-                            <p class="font-weight-bold">Tổng phí: <span class="text-primary">2.000.000VND</span></p>
+                            <p class="font-weight-bold">Tổng phí: <span class="text-primary"><span class="price-total mr-2">0</span>VND</span></p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
