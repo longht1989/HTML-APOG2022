@@ -72,7 +72,7 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Country">Nationality<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Country">
+                            <input type="txt" class="form-control" id="Country">
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Address">Address<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Address">
+                            <input type="txt" class="form-control" id="Address">
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Age">Year of birth<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control" id="Age">
+                            <input type="txt" class="form-control" id="Age">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -108,7 +108,7 @@
                     <div class="col-12 col-md-6">
                         <div class="form-group">
                             <label for="Education">Title<strong class="text-danger ml-1">*</strong></label>
-                            <input type="password" class="form-control is-valid" id="Education">
+                            <input type="txt" class="form-control is-valid" id="Education">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -154,7 +154,7 @@
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="Country1">Nationality<strong class="text-danger ml-1">*</strong></label>
-                                <input type="password" class="form-control" id="Country1">
+                                <input type="txt" class="form-control" id="Country1">
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="Address1">Address<strong class="text-danger ml-1">*</strong></label>
-                                <input type="password" class="form-control" id="Address1">
+                                <input type="txt" class="form-control" id="Address1">
                             </div>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="Age1">Year of birth<strong class="text-danger ml-1">*</strong></label>
-                                <input type="password" class="form-control" id="Age1">
+                                <input type="txt" class="form-control" id="Age1">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -190,7 +190,7 @@
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="Education1">Title<strong class="text-danger ml-1">*</strong></label>
-                                <input type="password" class="form-control" id="Education1">
+                                <input type="txt" class="form-control" id="Education1">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
@@ -216,8 +216,8 @@
                             <label for="payment">Payment method</label>
                             <select name="" id="payment" class="form-control" placeholder="Select payment method">
                                 <option value="" disabled selected>Select payment method</option>
-                                <option value="">Bank transfer</option>
-                                <option value="">Online payment</option>
+                                <option value="online">Online payment</option>
+                                <option value="transfer">Bank transfer</option>
                             </select>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                         <div class="text-right"><button type="submit" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal">Send & Pay</button></div>
                     </div>
                 </div>
-                <div class="p-3 my-4 border border-light rounded hidden" id="VAInfo" style="">
+                <div class="p-3 my-4 border border-light rounded hidden" id="VAInfo" style="display:none;">
                     <h5 class="text-center mb-3"><strong>Infomartion</strong></h5>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-hover" id="VAContent">
@@ -236,15 +236,19 @@
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Account number</th>
-                                    <td width="450">99900030279303</td>
+                                    <td width="450">355618</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Bank name</th>
-                                    <td width="450">Ngan hang Ban Viet - VIETCAPITALBANK</td>
+                                    <td width="450">Asia Commercial Joint Stock Bank</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Account name</th>
-                                    <td width="450">AP PAYMENT</td>
+                                    <td width="450">LIEN CHI HOI TAI MUI HONG NHI TPHCM</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" width="450">SWIFT code</th>
+                                    <td width="450">ASCBVNVX</td>
                                 </tr>
                             </tbody>
                         </table>

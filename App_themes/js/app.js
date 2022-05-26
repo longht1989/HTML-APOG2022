@@ -17,6 +17,15 @@ $(function() {
     $("#site-header .m-btn").on('click', btnExpandClick);
     /*pin header */
     window.onscroll = function() { windowScroll() };
+
+    $('#payment').on('change', function() {
+        var selectedVal = $("#payment option:selected").val();
+        if (selectedVal === "transfer") {
+            $('#VAInfo').show();
+        } else {
+            $('#VAInfo').hide();
+        }
+    });
 });
 
 /*customise function*/

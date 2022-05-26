@@ -145,8 +145,8 @@
                             <label for="payment">Phương thức thanh toán</label>
                             <select name="" id="payment" class="form-control" placeholder="Lựa chọn phương thức thanh toán">
                                 <option value="" disabled selected>Lựa chọn phương thức thanh toán</option>
-                                <option value="">Chuyển khoản</option>
-                                <option value="">Trực tuyến</option>
+                                <option value="online">Trực tuyến</option>
+                                <option value="transfer">Chuyển khoản</option>
                             </select>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                         <div class="text-right"><button type="submit" class="btn btn-lg btn-success" data-toggle="modal" data-target="#exampleModal">Gửi & Thanh toán</button></div>
                     </div>
                 </div>
-                <div class="p-3 my-4 border border-light rounded hidden" id="VAInfo" style="">
+                <div class="p-3 my-4 border border-light rounded hidden" id="VAInfo" style="display:none;">
                     <h5 class="text-center mb-3"><strong>Thông tin tài khoản nhận tiền</strong></h5>
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-hover" id="VAContent">
@@ -165,15 +165,19 @@
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Số tài khoản</th>
-                                    <td width="450">99900030279303</td>
+                                    <td width="450">355618</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Tại ngân hàng</th>
-                                    <td width="450">Ngan hang Ban Viet - VIETCAPITALBANK</td>
+                                    <td width="450">NGÂN HÀNG TMCP Á CHÂU - PGD ĐA KAO</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" width="450">Tên chủ tài khoản</th>
-                                    <td width="450">AP PAYMENT</td>
+                                    <td width="450">LIÊN CHI HỘI TAI MŨI HỌNG NHI TPHCM</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" width="450">Số Swiftcode</th>
+                                    <td width="450">ASCBVNVX</td>
                                 </tr>
                             </tbody>
                         </table>
