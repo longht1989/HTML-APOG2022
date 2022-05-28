@@ -7,3 +7,19 @@
         border-color: $green;
     }
 }
+
+.form-group {
+    margin-bottom: 0;
+    padding-bottom: 1.5em;
+    position: relative;
+
+    .invalid-feedback,
+    .valid-feedback {
+        position: absolute;
+        bottom: 4px;
+    }
+
+    &.mb-0 {
+        padding-bottom: 0;
+    }
+}
